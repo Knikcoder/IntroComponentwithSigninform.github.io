@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Intro with Sign Up form</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Description of your website">
+  <meta name="keywords" content="keyword1, keyword2, keyword3">
+  <meta name="author" content="Kumar Raja">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <style> 
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      margin: 0;
+      padding: 20px;
+      background: rgb(64, 115, 174);
+    }
+
+    @media only screen and (max-width: 600px) {
+      body {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+
+    .fullcontainer {
+      display: flex;
+    }
+
+    .heading h1 {
+      color: white;
+      display: flex;
+      justify-content: center;
+      font-size: 24px;
+      text-transform: uppercase;
+      padding: 20px;
+      background-color: #333;
+      margin: 0;
+    }
+
+    .intro {
+      flex: 50%;
+      padding: 20px;
+    }
+
+    .form1 {
+      flex: 50%;
+      display: flex;
+      justify-content: center;
+      padding-top: 10px;
+      margin: 3px;
+    }
+
+    .form1 form {
+      border: 2px solid #333;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .form1 form input {
+      font-size: large;
+      padding: 8px;
+      margin: 6px;
+      border-radius: 10px;
+    }
+
+    #button {
+      background: #007bff;
+      font-size: larger;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    #pac {
+      font-size: 14px;
+      color: #333;
+    }
+
+    #pac span {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="heading">
+    <h1>FRONTEND DEVELOPER</h1>
+  </div>
+  <div class="fullcontainer">
+    <div class="intro">
+      <h1 id="intro">What Does a Front-End Developer Do?</h1>
+      <p id="content">Front-end developers create user interfaces (UI). UI is the graphical layout of an application that determines what each part of a site or application does and how it will look. "I've always found crafting polished user interactions that surprise and delight users to be the most rewarding and engaging task," says Mari Batilando, a software engineer at Meta. "In order to do this, you need to both have an eye for detail and a rock-solid understanding of the platform."</p>
+    </div>
+    <div class="form1">
+      <form action="">
+        <input type="text" name="FirstName" id="FN" placeholder="First Name"><br>
+        <input type="text" name="LastName" id="LN" placeholder="Last Name"><br>
+        <input type="email" name="Email" id="Email" placeholder="Email"><br>
+        <input type="password" name="Password" id="password" placeholder="Password"><br>
+        <input type="button" value="CLAIM YOUR FREE TRIAL" id="button">
+        <p id="pac">By clicking the button, you are agreeing to <span>Terms and Conditions</span></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
